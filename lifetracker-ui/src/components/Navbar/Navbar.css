@@ -1,0 +1,38 @@
+.navbar {
+    justify-content: space-evenly;
+    display: flex;
+    background-color:#3f0d12;
+    background-image:linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
+    overflow: hidden;
+    height: 63px;
+    list-style-type: none;
+
+}
+/* 
+.logo{
+
+
+
+} */
+
+.navbar-nav{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.link{
+    list-style-type: none;
+    margin-right:6px;
+    text-decoration: none;
+    color:white;
+
+}
+
+.link li {
+  text-decoration: none;  
+list-style-type: none;
+
+}
