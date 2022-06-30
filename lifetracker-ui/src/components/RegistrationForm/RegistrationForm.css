@@ -1,0 +1,43 @@
+.register-button{
+
+
+    border-radius: 4px;
+}
+
+.footer {
+
+overflow: hidden;
+
+}
+
+.input-field{
+ 
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    margin: 8px 0; 
+    
+}
+
+input{
+    height: 50px;
+    padding: 0 15px;
+    font-size: 16px;
+    border: 1px solid var(--border-color);
+    width: 100%;
+    background: transparent;
+    color: var(--pure-white);
+}
+
+.split-input-field{
+display: flex;
+flex-direction: row;
+
+}
+
+.email-input{
+ width:150px;
+
+
+}
