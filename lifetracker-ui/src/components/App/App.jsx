@@ -10,8 +10,21 @@ import AccessForbidden from "../AccessForbidden/AccessForbidden"
 import NotFound from "../NotFound/NotFound"
 import LoginPage from "components/LoginPage/LoginPage"
 import Sleep from "../Sleep/Sleep"
+import AuthContextProvider from "../../../context/auth"
 
-export default function App() {
+export default function AppContainer (){
+<AuthContextProvider>
+<App></App>
+</AuthContextProvider>
+
+}
+
+
+
+
+
+
+function App() {
   const {isLoggedin, setisLoggedin} = React.useState(false)
   return (
     <div className="app">
