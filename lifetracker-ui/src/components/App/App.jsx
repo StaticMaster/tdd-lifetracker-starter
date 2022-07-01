@@ -10,13 +10,14 @@ import AccessForbidden from "../AccessForbidden/AccessForbidden"
 import NotFound from "../NotFound/NotFound"
 import LoginPage from "components/LoginPage/LoginPage"
 import Sleep from "../Sleep/Sleep"
-import AuthContextProvider from "../../../context/auth"
+import {AuthContextProvider} from "../../../contexts/auth"
 
 export default function AppContainer (){
+  return(
 <AuthContextProvider>
 <App></App>
 </AuthContextProvider>
-
+)
 }
 
 

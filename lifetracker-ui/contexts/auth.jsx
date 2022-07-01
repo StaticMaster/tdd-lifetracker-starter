@@ -1,13 +1,19 @@
 import React from 'react'
 import { createContext, useEffect, useState, useContext } from "react"
-import apiClient from '../services/apiClient'
+import ApiClient from '../services/apiClient'
+
 
 const AuthContext = createContext(null)
 export const AuthContextProvider=({children}) =>{
-const [user, setUser] =useState[{}] 
+    const [user, setUser] = useState(null) 
+    const [initialized, setInitialized] = useState(null)
+    const [isProcessing, setIsProcessing] = useState(null)
+    const [error,setError] = useState(null)
+
+const apiClient = new ApiClient("http://localhost:3000/")
 
 
-useEffect(() => {
+    useEffect(() => {
 
     let currentToken = window.localStorage.getItem("lifetracker_token")
     if(currentToken) {
@@ -25,7 +31,7 @@ useEffect(() => {
         //any children nested in the the Authcontext provider can get access to
 {
     return (
-        <AuthContext.Provider value = {authValue} >
+        <AuthContext.Provider value = {{user,setUser,initialized,setInitialized,isProcessing,setIsProcessing,error,setError}} >
         <>{children}</>
         </AuthContext.Provider>
     )

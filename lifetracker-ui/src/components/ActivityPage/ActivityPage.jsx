@@ -1,7 +1,15 @@
 import React from 'react'
+import "./ActivityPage.css"
+
+
 
 export default function ActivityPage() {
   return (
-    <div>ActivityPage</div>
+    <div className='activity-name'>
+      
+
+
+
+    </div>
   )
 }

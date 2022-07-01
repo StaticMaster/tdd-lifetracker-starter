@@ -18,8 +18,7 @@ class ExpressError extends Error {
     }
   }
   
-  export{
-    ExpressError,
+  module.exports =
+    {ExpressError,
      NotFoundError,
-     BadRequestError,
-  }
+     BadRequestError,}
