@@ -11,6 +11,9 @@ import NotFound from "../NotFound/NotFound"
 import LoginPage from "components/LoginPage/LoginPage"
 import Sleep from "../Sleep/Sleep"
 import {AuthContextProvider} from "../../../contexts/auth"
+// import NutritionOverview from "components/NutritionOverview/NutritionOverview"
+import NutritionNew from "components/NutritionNew/NutritionNew"
+import NutritionDetail from "components/NutritionDetail/NutritionDetail"
 
 export default function AppContainer (){
   return(
@@ -19,11 +22,6 @@ export default function AppContainer (){
 </AuthContextProvider>
 )
 }
-
-
-
-
-
 
 function App() {
   const {isLoggedin, setisLoggedin} = React.useState(false)
@@ -40,6 +38,10 @@ function App() {
             <Route path ="/nutrition/*" element={isLoggedin?<NutritionPage/>:<AccessForbidden/>}/>
             <Route path = "*" element={<NotFound/>}/>
             <Route path = "/sleep" element={<Sleep/>}/>
+            {/* <Route path = "/nutrition" element={<NutritionOverview></NutritionOverview>}/>
+            <Route path = "/nutrition/create" element={<NutritionNew></NutritionNew>}/> 
+            <Route path = "/nutrition/id/:nutritionId" element={<NutritionDetail></NutritionDetail>}/>
+            <Route path = "/*" element = {<NotFound></NotFound>}/> */}
           </Routes>
       </BrowserRouter>
     </div>
