@@ -10,7 +10,7 @@ export const AuthContextProvider=({children}) =>{
     const [isProcessing, setIsProcessing] = useState(null)
     const [error,setError] = useState(null)
 
-const apiClient = new ApiClient("http://localhost:3000/")
+const apiClient = new ApiClient("http://localhost:3001/")
 
 
     useEffect(() => {

@@ -14,6 +14,7 @@ import {AuthContextProvider} from "../../../contexts/auth"
 // import NutritionOverview from "components/NutritionOverview/NutritionOverview"
 import NutritionNew from "components/NutritionNew/NutritionNew"
 import NutritionDetail from "components/NutritionDetail/NutritionDetail"
+import LoginForm from "components/LoginForm/LoginForm"
 
 export default function AppContainer (){
   return(

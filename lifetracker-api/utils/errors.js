@@ -21,4 +21,4 @@ class ExpressError extends Error {
   module.exports =
     {ExpressError,
      NotFoundError,
-     BadRequestError,}
+     BadRequestError}
