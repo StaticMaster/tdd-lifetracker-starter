@@ -1,8 +1,7 @@
 .navbar {
     justify-content: space-evenly;
     display: flex;
-    background-color:#3f0d12;
-    background-image:linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
+    background-color:#3366FF;
     overflow: hidden;
     height: 63px;
     list-style-type: none;
@@ -20,6 +19,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap:50px;
 
 }
 
@@ -34,5 +34,23 @@
 .link li {
   text-decoration: none;  
 list-style-type: none;
+
+}
+
+.btn{
+    border: 2px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    background-color: #c93200;
+    border-radius: 4px;
+    padding: 1.5px 15px;
+    transition:0.3s;
+    color:#fff;
+}
+
+.btn:hover{
+background-color:#3e8e41;
 
 }

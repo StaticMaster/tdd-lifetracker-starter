@@ -1,6 +1,11 @@
-.accessfobidden {
+.accessforbidden{
+font:bold;
+display: flex;
+flex-direction: column;
+color: white;
+}
 
-font:bold
-
-
+.statement{
+    display: flex;
+    flex-direction: column;
 }

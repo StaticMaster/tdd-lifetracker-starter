@@ -1,4 +1,5 @@
-import { getDatabaseUri } from "./config";
+const { getDatabaseUri } = require ("./config");
+const {Client} = require ("pg")
 
 const db = new Client ({connectionString: getDatabaseUri()})
 

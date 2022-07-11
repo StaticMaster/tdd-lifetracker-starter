@@ -18,7 +18,7 @@ Deployed Application: [Lifetracker Deployed Site](ADD_LINK_HERE)
 - [x] **Registration Page:** A form that allows the user to sign up with their email, password, username, first name, and last name.
 - [ ] When a user first authenticates, they should be redirected to an authenticated view (i.e the detailed activity page). When they sign out, all frontend data should be reset.
 - [ ] Users have access to an overview Activity page that show one summary statistic about each of the 3 types of activity tracked.
-- [ ] The API should have a `security` middleware that only allows authenticated users to access resources and only allows users to access resources about themselves. 
+- [x] The API should have a `security` middleware that only allows authenticated users to access resources and only allows users to access resources about themselves. 
 - [ ] Users should have the ability to track at least **1** types of activities (i.e Nutrition, Exercise, Sleep, etc.). Each activity should be tracked on separate pages.
 - [ ] Deployed website with Heroku & Surge. 
 
@@ -39,7 +39,10 @@ Implement any of the following features to improve the application:
 
 ### Walkthrough Video
 
-https://www.loom.com/share/9f385ccd81e6462e9b151988ae61a4b2
+https://www.loom.com/share/9f385ccd81e6462e9b151988ae61a4b2 
+
+https://www.loom.com/share/e813583179ef461c96027f19508327d0 (7/8/22)
+
 
 ### Reflection
 

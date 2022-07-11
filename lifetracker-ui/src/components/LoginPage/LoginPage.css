@@ -26,15 +26,18 @@ font-size: 20px;
 .login-button{
 
 font-size: 20px;
-color: blue;
+color: black;
 padding:15px 20px;
 margin-top: 15px;
+height:60px;
+width:100%
 
 }
 
 .login-title{
 
 font-size: 50px;
+color: white;
 
 
 }

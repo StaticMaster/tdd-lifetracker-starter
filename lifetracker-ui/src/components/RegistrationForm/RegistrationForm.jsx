@@ -1,39 +1,45 @@
-import React from 'react'
-
+import React, { useState } from 'react'
+import "./RegistrationForm.css"
 export default function RegistrationForm() {
+
+ function handleOnCreateAccount() {
+   const [isCreateAccount, createAccount] = useState(false);
+   
+ }
+
   return (
     <div className='register-form'> 
   <h1 className='register-title'>Register</h1>
-    <form className='login-form'>
+    <form className='registration-form'>
         <div className='input-field'>
-          <label for="register-email" className='register-label'>Email</label>
+          <label for="register-email" className='label'>Email</label>
           <br></br>
-          <input type="text" id="newEmail" name="Enter a valid email" className='email-input' placeholder='Enter a valid email'></input>
+          <input type="text" id="newEmail" name="Enter a valid email" className='form-input' placeholder='Enter a valid email'></input>
           <br></br>
         </div>
         <div className='input-field'>
-          <label for="Username" className='username-label'>Username</label>
+          <label for="Username" className='label'>Username</label>
           <br></br>
-          <input type="text" id="username" name="your_username" className='username-input' placeholder='your_username'></input>
+          <input type="text" id="username" name="your_username" className='form-input' placeholder='your_username' />
           <br></br>
         </div>
         <div className='input-field'>
           <div className='split-input-field'>
-          <input type="text" id="firstname" name="First Name" className='firstname' placeholder='First Name'></input>
-          <input type="text" id="lastname" name="Last Name" className='lastname' placeholder='Last Name'></input>
+          <input type="text" id="firstname" name="First Name" className='form-input' placeholder='First Name' ></input>
+          <input type="text" id="lastname" name="Last Name" className='form-input' placeholder='Last Name' ></input>
         </div>
         <div className='input-field'>
-          <label for="password">Password</label> 
+          <label for="password" className='label'>Password</label> 
           <br></br>
-          <input type="password" name="password" placeholder="Enter a secure password"></input>
+          <input type="password" name="password" placeholder="Enter a secure password" className='form-input' ></input>
         </div>
         <div className='input-field'>
-          <label for="passwordConfirm">Confirm Password</label>
+          <label for="passwordConfirm" className='label'>Confirm Password</label>
           <br></br>  
-          <input type="password" name="passwordConfirm" placeholder="Confirm your password"></input>
+          <input type="password" name="passwordConfirm" placeholder="Confirm your password" className='form-input'></input><br></br>
         </div>
           </div>
-          <button type="button" className='register-button'>Create Account</button> 
+          <button type="button" onClick={handleOnCreateAccount} iscreateAccount ={()=>createAccount(false)} className='register-button'>Create Account</button> 
         </form>   
         <div className='footer'>
         <p>

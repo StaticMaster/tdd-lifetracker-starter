@@ -12,6 +12,7 @@
 .landingpage-title {
         font-family: "Kanit","Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
         position: absolute;
+        color: white;
     }
 
 .hero{
@@ -31,7 +32,7 @@ align-items: center;
 
 .tomcruise{
 
-width: 100%;
+width: 80%;
 height: 100%;
 
 
@@ -40,6 +41,7 @@ height: 100%;
 .text{
 
     font-size: 24px;
+    color: white;
 }
 
 .tiles{
@@ -49,6 +51,7 @@ height: 100%;
         align-items: center;
         width: 750px;
         margin: 50px auto 0;
+        color:white;
 }
 
 .tile div{

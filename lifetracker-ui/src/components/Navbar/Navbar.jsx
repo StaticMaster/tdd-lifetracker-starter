@@ -23,8 +23,8 @@ export default function Navbar() {
       <Link to="/exercise"className="link"><li>Exercise</li></Link>
       <Link to="/nutrition"className="link"><li>Nutrition</li></Link>
       <Link to="/sleep"className="link"><li>Sleep</li></Link>
-      <Link to="/login"className="link"><li>Login</li></Link>
-      <Link to="/register"className="link"><li>Sign Up</li></Link>
+      <Link to="/login"className="link"><li className="btn">Login</li></Link>
+      <Link to="/register"className="link"><li className="btn">Sign Up</li></Link>
       </ul>
     </nav>
   );

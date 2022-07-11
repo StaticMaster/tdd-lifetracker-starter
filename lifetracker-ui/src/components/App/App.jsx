@@ -35,10 +35,10 @@ function App() {
             <Route path ="/" element={<LandingPage/>}/>
             <Route path ="/login" element={<LoginPage/>}/>
             <Route path ="/register" element={<RegisterPage/>}/>
-            <Route path ="/activity" element={<ActivityPage/>}/>
+            <Route path ="/activity" element={isLoggedin?<ActivityPage/>:<AccessForbidden/>}/>
             <Route path ="/nutrition/*" element={isLoggedin?<NutritionPage/>:<AccessForbidden/>}/>
-            <Route path = "*" element={<NotFound/>}/>
-            <Route path = "/sleep" element={<Sleep/>}/>
+            <Route path = "*" element={isLoggedin?<NotFound/>:<AccessForbidden/>}/>
+            <Route path = "/sleep" element={isLoggedin?<Sleep/>:<AccessForbidden/>}/>
             {/* <Route path = "/nutrition" element={<NutritionOverview></NutritionOverview>}/>
             <Route path = "/nutrition/create" element={<NutritionNew></NutritionNew>}/> 
             <Route path = "/nutrition/id/:nutritionId" element={<NutritionDetail></NutritionDetail>}/>
