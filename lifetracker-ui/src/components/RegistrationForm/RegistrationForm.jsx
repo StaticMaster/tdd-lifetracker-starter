@@ -80,7 +80,7 @@ export default function RegistrationForm() {
       setIsLoading(false)
     }
   }
- }
+ 
 
   return (
     <div className='register-form'> 
@@ -89,29 +89,29 @@ export default function RegistrationForm() {
         <div className='input-field'>
           <label for="register-email" className='label'>Email</label>
           <br></br>
-          <input type="text" id="newEmail" name="Enter a valid email" className='form-input' placeholder='Enter a valid email'></input>
+          <input type="text" id="newEmail" name="Enter a valid email" className='form-input' placeholder='Enter a valid email' onChange={handleOnInputChange}></input>
           <br></br>
         </div>
         <div className='input-field'>
           <label for="Username" className='label'>Username</label>
           <br></br>
-          <input type="text" id="username" name="your_username" className='form-input' placeholder='your_username' />
+          <input type="text" id="username" name="your_username" className='form-input' placeholder='your_username'onChange={handleOnInputChange} />
           <br></br>
         </div>
         <div className='input-field'>
           <div className='split-input-field'>
-          <input type="text" id="firstname" name="First Name" className='form-input' placeholder='First Name' ></input>
-          <input type="text" id="lastname" name="Last Name" className='form-input' placeholder='Last Name' ></input>
+          <input type="text" id="firstname" name="First Name" className='form-input' placeholder='First Name' onChange={handleOnInputChange} ></input>
+          <input type="text" id="lastname" name="Last Name" className='form-input' placeholder='Last Name' onChange={handleOnInputChange} ></input>
         </div>
         <div className='input-field'>
           <label for="password" className='label'>Password</label> 
           <br></br>
-          <input type="password" name="password" placeholder="Enter a secure password" className='form-input' ></input>
+          <input type="password" name="password" placeholder="Enter a secure password" className='form-input' onChange={handleOnInputChange} ></input>
         </div>
         <div className='input-field'>
           <label for="passwordConfirm" className='label'>Confirm Password</label>
           <br></br>  
-          <input type="password" name="passwordConfirm" placeholder="Confirm your password" className='form-input'></input><br></br>
+          <input type="password" name="passwordConfirm" placeholder="Confirm your password" className='form-input' onChange={handleOnInputChange}></input><br></br>
         </div>
           </div>
           <button type="button" onClick={handleOnSubmit} className='register-button'>Create Account</button> 
@@ -124,4 +124,5 @@ export default function RegistrationForm() {
         </div>
        </div>
   )
+}
 }
